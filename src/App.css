@@ -1,0 +1,96 @@
+:root {
+    --primary-color: linear-gradient(135deg, #a171bd, #6f467e); ;
+    --secondary-color: #b3afbd;
+    --dark-color: ;
+    --light-color: ;
+    --darkest-color: ;
+    --text-color: black ;
+    --background-color: rgb(199, 182, 207);;
+    /* */
+    --margin: ;
+    --padding: ;
+    --border-raduis: 10%;
+    --border:   1px solid #ffffff;
+    ;
+
+    /* */ 
+    --font-family: ;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    }
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    }
+    .calculator {
+    width: 50vw;
+    height: 100vh;
+    margin-top: 5px;
+    /* border-radius: var(--border-raduis) ; */
+    box-shadow:  50px rgba(46, 2, 46, 0.5);
+
+    }
+    .calculator  .display {
+    color: var(--text-color);
+    /* text-align: right; */
+    padding: 10px 30px;
+    background: var(--primary-color);
+    height: 120px;
+    border-radius: var(--border-raduis)  ;
+    text-align: center;
+    font-size: 60px;
+    box-shadow:  10px   rgba(0, 0, 0, 0.5);
+    border: var(--border);
+
+    }
+    .display span {
+    font-size: 35px;
+    }
+    button{
+        appearance: none;
+        border: none;
+        outline: none;
+        font-size: 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        /* border: 1px solid #000000; */
+
+    }
+    button:hover{
+        opacity: 0.9;
+    }
+    .operators{
+        display: flex;
+        
+    }
+    .operators button{
+    flex: 1 1 0%;
+    background-color: var(--secondary-color);
+    font-weight: 700;
+    height: 100px;
+    color: var(--text-color);
+    }
+    .digits{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .digits button{
+        flex: 1 1 33.33%;
+        height: 102px;
+        background:var(--primary-color);
+        border-radius: var(--border-raduis) ;
+        color: var(--text-color);
+        box-shadow:  5px   rgba(0, 0, 0, 0.5);
+        border: var(--border);
+
+    }
