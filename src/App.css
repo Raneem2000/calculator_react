@@ -71,7 +71,8 @@ body {
     }
     .operators{
         display: flex;
-        
+        justify-content: center;
+        flex-wrap: nowrap;
     }
     .operators button{
     flex: 1 1 0%;
